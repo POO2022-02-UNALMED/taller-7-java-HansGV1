@@ -4,8 +4,7 @@ import java.util.List;
 public class Alfabeto extends Pictograma{
 	private static String[] letras;
 	private String interpretacion;
-	public final char[] letrasAbecedario = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-	public String letters;
+	public String contenedor;
 	
 	public Alfabeto(String ori, String[] letr, String inter) {
 		super(ori);
@@ -38,10 +37,10 @@ public class Alfabeto extends Pictograma{
 	}
 	@Override
 	public String toString() {
-		for (int i = 0; i < 26; i++ ) {
-			this.letters = this.letters + letrasAbecedario[i] + ", ";
+		for (int i = 0; i < Alfabeto.letras.length; i++ ) {
+			this.contenedor = this.contenedor + Alfabeto.letras[i] + ", ";
 		}
-		return this.letrasAbecedario.toString();
+		return this.contenedor.toString();
 	}
 	
 	
