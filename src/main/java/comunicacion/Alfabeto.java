@@ -38,7 +38,15 @@ public class Alfabeto extends Pictograma{
 	@Override
 	public String toString() {
 		for (int i = 0; i < Alfabeto.letras.length; i++ ) {
-			this.contenedor = this.contenedor + Alfabeto.letras[i] + ", ";
+			if (i == 0) {
+				this.contenedor = Alfabeto.letras[i] + ", ";
+			}
+			else if(i >= 1 && i < 25){
+				this.contenedor = this.contenedor + Alfabeto.letras[i] + ", ";
+			}
+			else {
+				this.contenedor = this.contenedor + Alfabeto.letras[i];
+			}
 		}
 		return this.contenedor.toString();
 	}
