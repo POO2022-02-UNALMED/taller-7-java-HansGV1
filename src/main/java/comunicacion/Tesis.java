@@ -49,7 +49,7 @@ public class Tesis extends Escrito{
 	
 	@Override
 	public int palabrasTotales(int pal) {
-		return super.getPaginas()*5;
+		return super.getPaginas()*pal*5;
 	}
 	
 	@Override
