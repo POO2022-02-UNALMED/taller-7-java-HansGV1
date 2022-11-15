@@ -1,7 +1,8 @@
 package comunicacion;
+import java.util.ArrayList;
 import java.util.List; 
 
-public class Tesis extends Escrito{
+public abstract class Tesis extends Escrito{
 	private String idea;
 	private static List<String> argumentos;
 	private String conclusion;

@@ -1,7 +1,8 @@
 package comunicacion;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Alfabeto extends Pictograma{
+public abstract class Alfabeto extends Pictograma{
 	private static List<String> letras;
 	private String interpretacion;
 	public final char[] letrasAbecedario = "abcdefghijklmnopqrstuvwxyz".toCharArray();
