@@ -18,7 +18,7 @@ public class Periodico extends Escrito{
 	public void setFecha(String fe) {
 		this.fecha = fe;
 	}
-	public String getPrmicia() {
+	public String getPrimicia() {
 		return this.primicia;
 	}
 	public void setPrimicia(String pri) {

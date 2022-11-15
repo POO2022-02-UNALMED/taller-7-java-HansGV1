@@ -2,22 +2,22 @@ package comunicacion;
 import java.util.List;
 
 public class Alfabeto extends Pictograma{
-	private static List<String> letras;
+	private static String[] letras;
 	private String interpretacion;
 	public final char[] letrasAbecedario = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 	public String letters;
 	
-	public Alfabeto(String ori, List<String> letr, String inter) {
+	public Alfabeto(String ori, String[] letr, String inter) {
 		super(ori);
 		Alfabeto.letras = letr;
 		this.interpretacion = inter;
 	}
 	
-	public static List<String> getLetras() {
+	public String[] getLetras() {
 		return Alfabeto.letras;
 	}
 	
-	public static void setLetras(List<String> le) {
+	public void setLetras(String[] le) {
 		Alfabeto.letras = le;
 	}
 	
@@ -29,7 +29,7 @@ public class Alfabeto extends Pictograma{
 	}
 	
 	public int cantidadLetras() {
-		return Alfabeto.letras.size();
+		return Alfabeto.letras.length;
 	}
 	
 	@Override
