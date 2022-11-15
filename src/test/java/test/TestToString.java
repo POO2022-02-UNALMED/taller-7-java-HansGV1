@@ -46,7 +46,6 @@ public class TestToString {
 				"2\n" + 
 				"no se debe uno burlar de los demas, ni presumir o ser vanidoso";
 		boolean ok = false;
-		System.out.println(fabula.toString());
 		if (fabula.toString().equals(comp)) {
 			ok = true;
 		}
