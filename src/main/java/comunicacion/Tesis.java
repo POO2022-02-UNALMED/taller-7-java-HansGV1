@@ -1,5 +1,4 @@
 package comunicacion;
-import java.util.List; 
 
 public class Tesis extends Escrito{
 	private String idea;
